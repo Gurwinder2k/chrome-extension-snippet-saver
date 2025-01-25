@@ -1,0 +1,115 @@
+body {
+  font-family: "Plus Jakarta Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 20px;
+  width: 500px;
+  background-color: #f3f3f1;
+  color: #2a2a2a;
+  margin: 0;
+}
+
+p {
+  line-height: 24.0854px;
+  margin: 0;
+  text-wrap: balance;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 30px;
+  letter-spacing: -0.44px;
+}
+
+h2 {
+  font-size: 20px;
+  letter-spacing: -0.44px;
+}
+
+pre {
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans", serif;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+#save-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#save-text {
+  height: 150px;
+  border-radius: 5px;
+}
+
+#category-select,
+#new-category,
+#search-input {
+  margin-top: 0.5rem;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#save-btn {
+  margin: 0.5rem 0;
+  width: fit-content;
+  background-color: #9de39f;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#save-btn:hover {
+  background-color: #61be64;
+}
+
+#search-container {
+  margin-bottom: 0.5rem;
+}
+
+.snippet {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.snippet p {
+  margin: 5px 0;
+}
+
+.snippet a {
+  color: #7f7f7c;
+  text-decoration: underline;
+}
+
+#delete-btn {
+  background-color: #d35555;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#delete-btn:hover {
+  background-color: darkred;
+}
+
+#download-btn {
+  background-color: #efd28f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #2a2a2a;
+  margin: 5px 0;
+}
+
+#download-btn:hover {
+  background-color: #c7a75d;
+}

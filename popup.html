@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MemoClip</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>MemoClip</h1>
+
+    <form id="save-form">
+      <h2>New Snippet</h2>
+      <textarea id="save-text" placeholder="Enter text to save"></textarea>
+
+      <select id="category-select">
+        <option value="" disabled selected>Select a category</option>
+        <option value="add-new">Add New Category</option>
+      </select>
+
+      <input
+        type="text"
+        id="new-category"
+        placeholder="New Category"
+        style="display: none"
+      />
+
+      <button type="button" id="save-btn">Save</button>
+    </form>
+
+    <h2>Saved Snippets</h2>
+
+    <div id="search-container">
+      <strong><p>Filter:</p></strong>
+      <div>
+        <input
+          type="radio"
+          id="filter-all"
+          name="filter"
+          value="all"
+          checked
+          style="accent-color: #73733e"
+        />
+        <label for="filter-all">All</label>
+
+        <input
+          type="radio"
+          id="filter-text"
+          name="filter"
+          value="text"
+          style="accent-color: #73733e"
+        />
+        <label for="filter-text">Text</label>
+
+        <input
+          type="radio"
+          id="filter-category"
+          name="filter"
+          value="category"
+          style="accent-color: #73733e"
+        />
+        <label for="filter-category">Category</label>
+      </div>
+
+      <input type="text" id="search-input" placeholder="Start Typing..." />
+    </div>
+    <button id="download-btn">Download All Snippets</button>
+
+    <div id="saved-snippets"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

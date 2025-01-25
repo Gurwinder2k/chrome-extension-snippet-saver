@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "MemoClip",
+  "version": "1.0",
+  "description": "MemoClip is a fast and convenient Chrome extension that allows you to save important text, categorize it, and store URLs for quick reference. Whether you're saving code snippets, articles, or key insights, MemoClip helps you organize and track valuable information, making it easier to access whenever you need it.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
